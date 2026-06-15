@@ -1,0 +1,63 @@
+/* Glassmorphism Premium */
+.glass {
+  background: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+.dark .glass {
+  background: rgba(15, 23, 42, 0.45);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+.glass-card {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+.dark .glass-card {
+  background: rgba(30, 41, 59, 0.7);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+/* Bar Swap Animation Glow Effect */
+.bar-comparing {
+  box-shadow: 0 0 15px #f43f5e;
+  transform: scale(1.05);
+}
+.bar-swapping {
+  box-shadow: 0 0 20px #eab308;
+  transform: scale(1.1) translateY(-8px);
+  animation: shake 0.15s ease-in-out infinite alternate;
+}
+.bar-sorted {
+  box-shadow: 0 0 12px #10b981;
+}
+
+@keyframes shake {
+  0% {
+    transform: scale(1.1) translateY(-8px) rotate(-1deg);
+  }
+  100% {
+    transform: scale(1.1) translateY(-8px) rotate(1deg);
+  }
+}
+
+/* Hide Scrollbars */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Code line tracers highlight */
+.code-line-active {
+  background-color: rgba(245, 158, 11, 0.25);
+  border-left: 4px solid #f59e0b;
+  font-weight: 600;
+  transition: all 0.1s ease-in-out;
+}
